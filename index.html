@@ -11,9 +11,18 @@
         <div class="dropdown">
             <div class="dropdown-icon">▼</div>
             <div class="dropdown-content">
+                <div class="checkboxes">
+                    <label>Sliders</label>
+                    <input type="checkbox" name="sliders-checkbox" id="sliders-checkbox" checked/>
+                </div>
                 <label for="points">Points</label>
-                <input type="range" value="1000" min="1" max="10000" name="points" id="points"/>
+                <input type="range" value="1000" min="1" max="100000" name="points" id="points" oninput="reset()"/>
+                <button onclick="reset()">Reset</button>
             </div>
+        </div>
+        <div class="floating">
+            <h1 id="aprox-title">4 * (points in circle / total)</h1>
+            <p id="aprox-value">0.0</p>
         </div>
     </body>
 </html>
