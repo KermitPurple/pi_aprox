@@ -71,3 +71,11 @@ function calculatePi(){
     }
     return 4 * (count / els.points.valueAsNumber);
 }
+
+function setSliders(sliders){
+    if(sliders){
+        els.points.type = 'range';
+    } else {
+        els.points.type = 'number';
+    }
+}

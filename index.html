@@ -13,7 +13,7 @@
             <div class="dropdown-content">
                 <div class="checkboxes">
                     <label>Sliders</label>
-                    <input type="checkbox" name="sliders-checkbox" id="sliders-checkbox" checked/>
+                    <input type="checkbox" name="sliders-checkbox" id="sliders-checkbox" oninput="setSliders(this.checked)" checked/>
                 </div>
                 <label for="points">Points</label>
                 <input type="range" value="1000" min="1" max="100000" name="points" id="points" oninput="reset()"/>
